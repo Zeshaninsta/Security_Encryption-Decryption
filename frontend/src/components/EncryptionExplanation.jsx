@@ -4,9 +4,9 @@ import { Link } from "react-router-dom";
 
 const EncryptionExplanation = () => {
   return (
-    <div className="container mx-auto flex flex-col md:flex-row items-center justify-around py-12">
+    <div className="flex flex-col md:flex-row items-center justify-evenly p-5 gap-5">
       {/* Div for Caesar Cipher Explanation */}
-      <div className="flex flex-col justify-center items-center">
+      <div className="flex flex-col justify-center items-center  border border-gray-100 p-3">
         <FaLock className="text-4xl mb-4" />
         <h3 className="text-xl font-semibold mb-2">Caesar Cipher</h3>
         <p className="text-gray-700">
@@ -16,14 +16,14 @@ const EncryptionExplanation = () => {
         </p>
         <Link
           to="/caesar-explanation"
-          className="mt-4 bg-blue-500 text-white px-4 py-2 rounded-md hover:bg-blue-800 focus:outline-none focus:ring focus:border-blue-300"
+          className="mt-4 bg-blue-500 text-white p-2 rounded-md hover:bg-blue-800 text-sm font-bold"
         >
           Learn More
         </Link>
       </div>
 
       {/* Div for Custom Cipher Explanation */}
-      <div className="flex flex-col justify-center items-center">
+      <div className="flex flex-col justify-center items-center border border-gray-100 p-3">
         <FaCog className="text-4xl mb-4" />
         <h3 className="text-xl font-semibold mb-2">Custom Cipher</h3>
         <p className="text-gray-700">
@@ -33,7 +33,7 @@ const EncryptionExplanation = () => {
         </p>
         <Link
           to="/custom-explanation"
-          className="mt-4 bg-blue-500 text-white px-4 py-2 rounded-md hover:bg-blue-800 focus:outline-none focus:ring focus:border-blue-300"
+          className="mt-4 bg-blue-500 text-white p-2 rounded-md hover:bg-blue-800 text-sm font-bold"
         >
           Learn More
         </Link>
