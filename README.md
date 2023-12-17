@@ -59,18 +59,18 @@ The ETE CipherCraft project focuses on implementing encryption and decryption te
 The Caesar Cipher is a substitution cipher where each letter in the plaintext is shifted a certain number of places down the alphabet. It operates using a key, representing the number of positions each letter is shifted.
 Example:
 
-    ### Plain: HELLO
-    ### Key: 3
-    ### Encrypted: KHOOR
+    Plain: HELLO
+    Key: 3
+    Encrypted: KHOOR
 
 ## Custom Cipher
 
 The Custom Cipher involves two keys, the first being the standard alphabet, and the second being the reverse of the alphabet. Encryption and decryption are based on aligning each letter with the corresponding letter in the custom encryption key.
 Developers
 
-    ### Emran
-    ### Tuji
-    ### Eebisa
+    Emran
+    Tuji
+    Eebisa
 
 ## Project Aim
 
