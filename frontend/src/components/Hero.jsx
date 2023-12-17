@@ -1,5 +1,6 @@
-import React from "react";
-
+import React, { useEffect } from "react";
+import { useLocation } from "react-router-dom";
+import Services from "./Encryption";
 const Hero = () => {
   return (
     <div className="bg-blue-900 text-white py-16 px-5">

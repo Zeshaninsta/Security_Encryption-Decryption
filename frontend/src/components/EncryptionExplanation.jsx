@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 const EncryptionExplanation = () => {
   return (
-    <div className="flex flex-col md:flex-row items-center justify-evenly p-5 gap-5">
+    <div className="flex flex-col md:flex-row items-center justify-evenly p-5 gap-5 lg:w-[90%] m-auto">
       {/* Div for Caesar Cipher Explanation */}
       <div className="flex flex-col justify-center items-center  border border-gray-100 p-3">
         <FaLock className="text-4xl mb-4" />

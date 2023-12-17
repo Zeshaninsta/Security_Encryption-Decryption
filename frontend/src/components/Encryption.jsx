@@ -84,17 +84,20 @@ const EncryptionComponent = () => {
 
   return (
     <div>
-      <div className=" py-5">
+      <div
+        className=" py-5 w-[95%] lg:w-[85%] m-auto bg-blue-500 p-5 rounded"
+        id="Services"
+      >
         <div className="flex justify-center items-center flex-col">
-          <h1 className="text-blue-900 font-bold text-4xl text-center">
-            Crypto App
+          <h1 className="text-white font-bold text-2xl lg:text-4xl text-center">
+            ENCRYPT & DECRYPT
           </h1>
-          <p>
-            This is a simple web application that demonstrates how to interact
-            with the Crypto API using HTTP requests in Python and JavaScript.
-            The server side code
+          <p className="mt-5 text-sm lg:text-lg text-center text-white capitalize">
+            Encrypt and Decrypt any Text or Message using the below provided
+            input places, By just Choosing the method of Your Encryptio and
+            Decryption Simply you can Encrypt or Decrypt Your Message or Texts.
           </p>
-          <div className="w-[90%] font-poppins m-auto flex justify-center items-start flex-col container mx-auto mt-8 lg:w-3/4 border border-black">
+          <div className="w-full font-poppins m-auto flex justify-center items-start flex-col container mx-auto mt-8 ">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-5 w-full">
               {/* Left Side: Input and Controls */}
               <div className="bg-gray-100 p-5 ">

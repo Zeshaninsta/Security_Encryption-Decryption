@@ -1,11 +1,15 @@
 import React, { useState } from "react";
 import SubscribeCard from "./SubscribeCard";
+import { Link, NavLink } from "react-router-dom";
 
 const Nav = () => {
   const [isMobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   const toggleMobileMenu = () => {
     setMobileMenuOpen(!isMobileMenuOpen);
+  };
+  const handleLinkClick = () => {
+    setMobileMenuOpen(false); // Close the menu when a link is clicked
   };
 
   return (
@@ -22,18 +26,24 @@ const Nav = () => {
             isMobileMenuOpen ? "hidden" : ""
           }`}
         >
-          <a href="#" className="hover:text-gray-300">
+          <Link to="/" className="text-gray-200 hover:text-gray-300">
             Home
-          </a>
-          <a href="#" className="hover:text-gray-300">
+          </Link>
+          <Link to="/About" className="text-gray-200 hover:text-gray-300">
             About
-          </a>
-          <a href="#" className="hover:text-gray-300">
+          </Link>
+          <NavLink
+            smooth
+            duration={500}
+            offset={-50}
+            to="Home/Services"
+            className="text-gray-200 hover:text-gray-300"
+          >
             Services
-          </a>
-          <a href="#" className="hover:text-gray-300">
+          </NavLink>
+          <Link to="/Contact" className="text-gray-200 hover:text-gray-300">
             Contact
-          </a>
+          </Link>
         </div>
 
         <div className="hidden md:flex items-center space-x-4 relative">
@@ -52,20 +62,39 @@ const Nav = () => {
 
         {/* Mobile Menu (Displayed on Mobile) */}
         {isMobileMenuOpen && (
-          <div className="md:hidden absolute top-16 left-0 right-0 text-white bg-blue-900">
+          <div className="md:hidden fixed top-16 h-screen right-0 w-full text-white bg-blue-900">
             <div className="border-b-2 border-gray-300 mb-5">
-              <a href="#" className="block px-4 py-2 hover:bg-blue-800">
+              <Link
+                to="/"
+                className="block px-4 py-2 hover:bg-blue-800"
+                onClick={handleLinkClick}
+              >
                 Home
-              </a>
-              <a href="#" className="block px-4 py-2 hover:bg-blue-800">
+              </Link>
+              <Link
+                to="/About"
+                className="block px-4 py-2 hover:bg-blue-800"
+                onClick={handleLinkClick}
+              >
                 About
-              </a>
-              <a href="#" className="block px-4 py-2 hover:bg-blue-800">
+              </Link>
+              <NavLink
+                smooth
+                duration={500}
+                offset={-50}
+                to="Home/Services"
+                className="block px-4 py-2 hover:bg-blue-800"
+                onClick={handleLinkClick}
+              >
                 Services
-              </a>
-              <a href="#" className="block px-4 py-2 hover:bg-blue-800">
+              </NavLink>
+              <Link
+                to="/Contact"
+                className="block px-4 py-2 hover:bg-blue-800"
+                onClick={handleLinkClick}
+              >
                 Contact
-              </a>
+              </Link>
             </div>
             <div className="mt-5">
               {/* Form for Mobile */}
