@@ -44,13 +44,15 @@ The ETE CipherCraft project focuses on implementing encryption and decryption te
 
     ### 2 Run Flask Server:
 
-        ```bash
-         python app.py
-        ```
+    ```bash
+    python app.py
+    ```
 
     # Encryption Methods
 
-    ```
+    ```bash
+    Caesar Cipher
+    Custom Cipher
 
     ```
 
