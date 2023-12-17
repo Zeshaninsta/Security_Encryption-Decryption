@@ -46,10 +46,12 @@ The ETE CipherCraft project focuses on implementing encryption and decryption te
 
         ```bash
          python app.py
+        ```
+
+    # Encryption Methods
 
     ```
 
-    # Encryption Methods
     ```
 
 ## Caesar Cipher
