@@ -17,13 +17,21 @@ const Index = () => {
       }
     }
   }, [location.pathname]);
+  useEffect(() => {
+    if (location.pathname === "/Home/SecondPage") {
+      const sec = document.getElementById("explore");
+      if (sec) {
+        sec.scrollIntoView({ behavior: "smooth" });
+      }
+    }
+  }, [location.pathname]);
 
   return (
     <div>
       <Hero />
       <SecondPage />
       <Learn />
-      <Element name="predictComponent" id="services">
+      <Element id="services">
         <Services />
       </Element>
     </div>

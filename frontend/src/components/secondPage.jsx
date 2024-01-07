@@ -5,7 +5,7 @@ const secondPage = () => {
   return (
     <div className="flex flex-col md:flex-row justify-evenly items-center gap-5 p-4 mt-5 ">
       {/* Leftside */}
-      <div className="flex flex-col text-center lg:w-[40%] m-auto">
+      <div className="flex flex-col text-center lg:w-[40%] m-auto" id="explore">
         <h1 className="font-bold text-4xl">
           Secure Your Messages with Advanced Encryption Technology
         </h1>
